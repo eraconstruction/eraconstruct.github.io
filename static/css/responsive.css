@@ -1,0 +1,552 @@
+
+/*============= Extra large device ===============*/
+@media (min-width:1441px) and (max-width:1800px){
+     /* absolute menu area css */
+     .absolute_menu {
+        margin: 0 40px;
+    }
+    .main_menu_area.absolute_menu.sticky{
+        margin: 0 20px;
+    }
+    /* inner slider area css */
+
+
+
+}
+/*============= Desktop device ===============*/
+@media (min-width:1366px) and (max-width:1440px){
+    .header_item {
+        margin-left: 0;
+    }
+    .inner_main_nav_area {
+        margin-left: 0;
+    }
+    .main_nav_btn {
+        margin-left: -104px;
+    }
+    .brand_area .slick-next {
+        right: -4%;
+    }
+    .brand_area .slick-prev {
+        left: -4%;
+    }
+}
+/*============= Laptop device ===============*/
+@media (min-width:1024px) and (max-width:1365px){
+
+    .inner_slider_content h2 {
+        font-size: 35px;
+    }
+    .inner_slider_content h2 span{
+        font-size: 35px;
+    }
+    .header_top {
+        padding: 10px 0;
+        margin: 0;
+    }
+    .header_top_left {
+        margin-left: 0;
+    }
+    .site_logo_area {
+        margin-left: 0;
+    }
+    .header_top_right {
+        margin-right: 0;
+    }
+    .main_nav_area {
+        margin: 0;
+    }
+    /* menu bar */
+    .inner_main_nav_area >ul >li >a {
+        margin: 36px 7px 26px 11px;
+        font-size: 15px;
+    }
+    .inner_main_nav_area {
+        margin-left: -5px;
+    }
+    .main_nav_btn {
+        margin-left: -104px;
+    }
+    .header_item {
+        margin-left: 0;
+    }
+    .service_item {
+        display: block;
+        text-align: center;
+    }
+    .section_title h2 {
+        font-size: 25px;
+    }
+    .witr_text_widget_inner h2 {
+        font-size: 25px;
+    }
+    .faq_area {
+        padding: 0;
+    }
+    .em_testi_title span {
+        font-size: 14px;
+    }
+    .single_post_comment_area {
+        margin-right: -50px;
+    }
+    .ser_page {
+        padding-top: 650px;
+    }
+    .lo_text {
+        margin-right: 15px;
+    }
+    .cal_to_action {
+        margin: 0;
+    }
+    .about_img  img{
+        width: 100%;
+    }
+    .ab_text p{
+        font-size: 12px;
+    }
+    .single_about {
+        margin: 10px 0 10px;
+    }
+    .service_area {
+        margin: 0 -12px;
+    }
+    .portfolio_nav  .tab_bg li {
+        margin: 0 15px;
+    }
+    .single_faq img{
+        width: 100%;
+    }
+    /* counter_area */
+    .brand_area .slick-prev {
+        left: 0;
+    }
+    .brand_area .slick-next {
+        right: 0;
+    }
+    .footer_icon a {
+        width: 38px;
+    }
+    .inner_img_context h2 a {
+        font-size: 16px;
+    }
+    .apartment_area {
+        padding: 227px 158px 0 122px;
+    }
+    .team_text {
+        bottom: 2%;
+    }
+    .skill_area {
+        padding: 0;
+    }
+    .foote_menu {
+        margin-right: -100px;
+    }
+    .inner_yblog_form input {
+        width: 73%;
+    }
+    .kdblog_left {
+        padding: 0;
+    }
+}
+
+/*============= Tablet Large device ===============*/
+@media (min-width:992px) and (max-width:1023px){
+    h4{
+        font-size: 16px;
+    }
+  /* slider */
+  .header_top {
+    padding: 15px 0;
+}
+.inner_main_nav_area {
+    margin-left: 5px;
+}
+.inner_slider_area {
+    height: 600px;
+}
+.inner_ab img {
+    width: 100%;
+}
+.inner_blog_area {
+    margin: 0 10px 20px;
+}
+.single_about {
+    margin-top: 10px;
+}
+.apartment_area {
+    padding: 36px 97px;
+    margin-top: -170px;
+}
+.ser_left {
+    margin-left: 15px;
+}
+.witr_text_widget_inner h2 {
+    font-size: 25px;
+}
+.section_title p {
+    margin-top: 50px;
+}
+.brand_area .slick-next {
+    right: 0;
+}
+.brand_area .slick-prev {
+    left: 0;
+}
+.inner_yblog_form input {
+    width: 72%;
+}
+.calender td {
+    padding: 10px 3px;
+}
+.con_border {
+    width: 79%;
+}
+.apartment_area {
+    margin-top: 0;
+}
+.footer_icon a {
+    width: 38px;
+}
+.skill_area {
+    padding: 0;
+}
+.kdblog_left {
+    padding: 0;
+}
+
+}
+
+/*============= Tablet device ===============*/
+@media (min-width:768px) and (max-width:991px){
+    /* mobile menu css */
+    .mobile_menu{
+        display: block;
+    }
+    .mean-bar {
+        position: relative;
+    }
+    .mean-bar::before {
+        content: 'Menu';
+        position: absolute;
+        top: 7px;
+        right: 0;
+        bottom: 0;
+        left: 5%;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .mobile_logo_area{
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* main menu area css */
+    .main_menu_area, .inner_counter_area img{
+        display: none;
+    }
+  /* slider */
+  .header_top {
+    padding: 15px 0;
+}
+.header_top_right {
+    margin-top: -25px;
+}
+.cal_to_action {
+    padding: 60px 0px 60px 0px;
+    margin: 50px 0;
+}
+.inner_slider_area {
+    height: 500px;
+}
+.inner_slider_content {
+    text-align: center !important;
+}
+.inner_slider_content p {
+    width: 100%;
+}
+.brand_area .slick-next {
+    right: 0;
+}
+.brand_area .slick-prev {
+    left: 1%;
+}
+.witr_text_widget_inner h2 {
+    font-size: 25px;
+}
+.counter_area {
+    margin: 0;
+    padding: 0;
+}
+.section_title {
+    margin: 0 0 20px;
+}
+.section_title h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.skill_area {
+    padding: 0;
+}
+.inner_ab img{
+    width: 100%;
+}
+.faq_text {
+    width: 100%;
+}
+.faq_text h2 {
+    font-size: 25px;
+}
+.card_active {
+    margin-top: 0;
+}
+.apartment_area {
+    margin-top: 12px;
+    width: 193%;
+    padding: 60px 41px 0 90px;
+}
+.calender td {
+    padding: 10px 14.4px;
+}
+.foote_menu {
+    margin-right: 0;
+}
+.apartment_area {
+    margin-top: 12px;
+    width: 193%;
+}
+.main_item {
+    margin: 30px 0;
+}
+.skill_area {
+    padding: 30px 0;
+}
+.text_box {
+    margin: 0 35px;
+}
+.kdblog_left {
+    padding: 0;
+}
+
+}
+/*============= mobile large device ===============*/
+@media (max-width:767px){
+    /* mobile menu css */
+    .mobile_menu{
+        display: block;
+    }
+    .mean-bar {
+        position: relative;
+    }
+    .mean-bar::before {
+        content: 'Menu';
+        position: absolute;
+        top: 7px;
+        right: 0;
+        bottom: 0;
+        left: 5%;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .mobile_logo_area{
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    /* main menu css */
+    .main_menu_area, .inner_faq_ac_item a i{
+        display: none;
+    }
+    /* slider */
+    .header_top_left p {
+        text-align: center;
+        margin: 0;
+    }
+    .sab_text {
+        padding: 80px 0 45px;
+    }
+    .contact_middle_text h2 {
+        font-size: 25px;
+    }
+    .inner_slider_content h1 {
+        font-size: 22px;
+    }
+    .inner_slider_content p {
+        margin: auto;
+        width: 100%;
+    }
+    .inner_slider_area {
+        height: 400px;
+    }
+    .header_top_right ul {
+        text-align: center;
+    }
+    .s_btnc {
+        display: none;
+    }
+    .faq_text h2 {
+        font-size: 28px;
+    }
+    .faq_text {
+        margin-top: 30px;
+    }
+    .card_active {
+        margin-top: 10px;
+    }
+    .skill_area {
+        padding: 0;
+    }
+    .single_choose h4{
+        font-size: 17px;
+    }
+    .calender th {
+        padding: 5px 32px;
+    }
+    .single_contact, .contact_area {
+        padding: 10px;
+    }
+    .witr_text_widget_inner h2 {
+        font-size: 25px;
+    }
+    .cal_to_action {
+        padding: 38px 0px 36px 0px;
+    }
+    .header_top_right {
+        margin-right: 0;
+    }
+    .sab_text h2 {
+        font-size: 24px;
+    }
+    .cal_to_action {
+        padding: 105px 0px 60px 0px;
+    }
+    .header_top {
+        padding: 15px 0;
+    }
+    .section_title h2 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .header_top_left p a {
+        margin-left: 5px;
+    }
+    .inner_slider_content {
+        text-align: center !important;
+    }
+    .brand_area .slick-next {
+        right: 0;
+    }
+    .brand_area .slick-prev {
+        left: 0;
+    }
+    .tr_vedio_vano_box a i {
+        left: 46%;
+    }
+    .cal_text p {
+        width: 100%;
+    }
+    .portfolio_area {
+        padding: 0;
+    }
+    .header_top_left {
+        margin-left: 0;
+    }
+    .section_title p {
+        width: 98%;
+        margin-top: 50px;
+    }
+    .skill_area {
+        padding: 0 0;
+    }
+    .single_about_text.single_faq {
+        margin-top: 30px;
+    }
+    .text_box {
+        margin: 0 10px;
+    }
+    .apartment_area {
+        padding: 228px 66px 0 61px;
+    }
+    .ab_text {
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    .absolute_icons a {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .counter_area {
+        padding: 0;
+    }
+    .img_area {
+        padding: 0;
+    }
+    .inner_img_context h2 a {
+        font-size: 17px;
+    }
+    .test_active {
+        display: block;
+        text-align: -webkit-center;
+    }
+    .test_nav {
+        text-align: center;
+    }
+    .foote_menu {
+        margin-right: 0;
+    }
+    .main_item {
+        margin: 15px 0;
+    }
+    .kdblog_left {
+        padding: 0;
+    }
+    .ycalender_inner th {
+        padding: 10px 14px;
+    }
+}
+
+/*============= mobile device ===============*/
+@media (min-width:320px) and (max-width:480px){
+    h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .choose_text h2 {
+        font-size: 25px;
+    }
+    .cal_text h2 {
+        font-size: 20px;
+    }
+    .ab_text h4 a{
+        font-size: 15px;
+    }
+    .main_text_box {
+        display: block;
+    }
+    .apartment_area {
+        padding: 228px 0 0 0;
+    }
+    .slick-slide img {
+        margin: auto;
+    }
+    .main_item {
+        margin: 20px 0;
+    }
+    .footer_area {
+        text-align: center;
+    }
+    .calender th {
+        padding: 5px 0;
+    }
+    .calender td {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    #scrollUp {
+        right: 30px;
+        bottom: 60px;
+    }
+}
