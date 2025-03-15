@@ -337,21 +337,21 @@ $('[data-countdown]').each(function() {
     animation: 'fade'
   });
 
-  var siteCarousel = function () {
-    $('.gallery-section').owlCarousel({
-      center: false,
-      items: 1,
-      loop: true,
-      stagePadding: 0,
-      margin: 0,
-      autoplay: true,
-      // nav: true,
-    });
-  }
-  siteCarousel();
+  // var siteCarousel = function () {
+  //   $('.gallery-section').owlCarousel({
+  //     center: false,
+  //     items: 1,
+  //     loop: true,
+  //     stagePadding: 0,
+  //     margin: 0,
+  //     autoplay: true,
+  //     // nav: true,
+  //   });
+  // }
+  // siteCarousel();
 
-  $('#gallery-section').magnificPopup({
-    delegate: 'a', // child items selector, by clicking on it popup will open
+  $('.gallery-section').magnificPopup({
+    delegate: '.preview_img', // child items selector, by clicking on it popup will open
     type: 'image',
     closeOnContentClick: true,
     mainClass: 'mfp-img-mobile',
@@ -362,7 +362,3 @@ $('[data-countdown]').each(function() {
 
 
   });
-
-
-
-
