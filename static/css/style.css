@@ -1960,7 +1960,7 @@ table, th, td{
 /*===========START FOOTER area  ======*/
 .footer_area {
     background-color: #1a1a1a;
-    margin: 50px 0 0;
+    /* margin: 50px 0 0; */
     padding: 50px 0;
 }
 .footer_middle {
