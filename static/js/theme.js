@@ -363,29 +363,55 @@ $('[data-countdown]').each(function() {
 
   });
 
-  let __semio__params = {
-    graphcommentId: "<site-id>", // make sure the id is yours
+  $(document).ready(function () {
+    $('#contactForm').on('submit', function (event) {
+      event.preventDefault();
+      var fname = $('#fname').val();
+      var lname = $('#lname').val();
+      var phone = $('#phone').val();
+      var email = $('#email').val();
+      var project = $('#project').val();
+      var message = $('#message').val();
+      var data = { fname: fname, lname: lname, phone: phone, email: email, project: project, message: message };
+      var url = 'https://script.google.com/macros/s/AKfycbyKsZcjKtI2zJjHDzVRDZOjYxN1NuLnIMZaDYGpr3HtLgbgd-GKRBsUEBTTOo09IjXj/exec';
+      console.log(data);
+
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8',
+        },
+        body: JSON.stringify(data),
+      })
+      .then((res) => res.json())
+      .then((data) => console.log('data', data))
+      .catch((err) => console.log('err', err));
+    })
+  });
+
+  /* - - - CONFIGURATION VARIABLES - - - */
+
+  var __semio__params = {
+    graphcommentId: "my-test-comment", // make sure the id is yours
 
     behaviour: {
-        // HIGHLY RECOMMENDED
-        uid: "<page-id>", // uniq identifer for the comments thread on your page (ex: your page id)
+    // HIGHLY RECOMMENDED
+    //  uid: "...", // uniq identifer for the comments thread on your page (ex: your page id)
     },
 
     // configure your variables here
+
 }
 
 /* - - - DON'T EDIT BELOW THIS LINE - - - */
 
 function __semio__onload() {
-    __semio__gc_graphlogin(__semio__params)
+    __semio__gc_graphlogin(__semio__params);
 }
 
-(function () {
-    let gc = document.createElement('script');
-    gc.type = 'text/javascript';
-    gc.async = true;
-    gc.onload = __semio__onload;
-    gc.defer = true;
-    gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+
+(function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
 })();

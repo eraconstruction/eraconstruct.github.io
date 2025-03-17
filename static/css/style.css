@@ -997,7 +997,7 @@ p {
 
 /*======== blog area start  ==========*/
 .blog_area {
-    padding: 100px 0 0;
+    padding: 100px 0;
 }
 .inner_blog_content p {
     font-size: 14px;
@@ -1806,8 +1806,10 @@ table, th, td{
 
 /*===========START CONTACT area  ======*/
 .contact_area {
-    padding: 60px 0 0;
-    margin: 60px 0;
+    padding: 60px 0;
+}
+.no-margin-bottom {
+    margin-bottom: 0 !important;
 }
 .single_contact{
     position: relative;

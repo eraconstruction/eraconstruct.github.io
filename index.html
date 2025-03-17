@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,  user-scalable=0">
     <!-- site title -->
-    <title>Colite - Best Corporate Service website Template</title>
+    <title>It is a demo.</title>
     <!-- site favicon -->
 
     <!-- bootstrap css -->
@@ -437,7 +437,7 @@
     </div>
     <div class="row">
         <div class="col-md-12 mb-12" id="reviews-container">
-
+            <div id="graphcomment"></div>
         </div>
     </div>
 </section>
@@ -453,8 +453,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-7 mb-5">
-          <form action="#" class="p-5 bg-white">
+        <div class="col-md-7 mb-5 no-margin-bottom">
+          <form action="#" class="p-5 bg-white" id="contactForm">
             <div class="row form-group">
               <div class="col-md-6 mb-3 mb-md-0">
                 <label class="text-black" for="fname">First Name<strong>*</strong></label>
@@ -469,7 +469,7 @@
             <div class="row form-group">
 
                 <div class="col-md-12">
-                  <label class="text-black" for="email">Phone<strong>*</strong></label>
+                  <label class="text-black" for="phone">Phone<strong>*</strong></label>
                   <input type="tel" id="phone" class="form-control" required>
                 </div>
               </div>
@@ -485,8 +485,8 @@
             <div class="row form-group">
 
               <div class="col-md-12">
-                <label class="text-black" for="subject">Project<strong>*</strong></label>
-                <select name="project" class="form-control" required>
+                <label class="text-black" for="project">Project<strong>*</strong></label>
+                <select name="project" id="project" class="form-control" required>
                     <option value="">--Please choose an option--</option>
                     <option value="Flooring">Flooring</option>
                     <option value="Painting">Painting</option>
@@ -667,5 +667,6 @@
  <script src="static/js/theme.js"></script>
  <script src="static/js/owl.carousel.min.js"></script>
  <script src="static/js/jquery.magnific-popup.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/fetch-polyfill@0.8.2/fetch.min.js"></script>
 </body>
 </html>
