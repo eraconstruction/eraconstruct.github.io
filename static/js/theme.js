@@ -337,18 +337,17 @@ $('[data-countdown]').each(function() {
     animation: 'fade'
   });
 
-  // var siteCarousel = function () {
-  //   $('.gallery-section').owlCarousel({
-  //     center: false,
-  //     items: 1,
-  //     loop: true,
-  //     stagePadding: 0,
-  //     margin: 0,
-  //     autoplay: true,
-  //     // nav: true,
-  //   });
-  // }
-  // siteCarousel();
+  $('.slide-one-item').owlCarousel({
+    center: false,
+    items: 1,
+    loop: true,
+    stagePadding: 0,
+    margin: 0,
+    autoplay: true,
+    pauseOnHover: false,
+    nav: true,
+    navText: ['<span class="icofont-arrow-left">', '<span class="icofont-arrow-right">']
+  });
 
   $('.gallery-section').magnificPopup({
     delegate: '.preview_img', // child items selector, by clicking on it popup will open
@@ -360,58 +359,45 @@ $('[data-countdown]').each(function() {
     },
   });
 
-
+  $('#SuccessDialog button').on('click', function () {
+    $('#SuccessDialog').modal('hide');
   });
+  $('#contactForm').on('submit', function (event) {
+    $('#globalLoader').removeClass('d-none');
+    var fname = $('#fname').val();
+    var lname = $('#lname').val();
+    var phone = $('#phone').val();
+    var email = $('#email').val();
+    var project = $('#project').val();
+    var message = $('#message').val();
+    var data = { fname: fname, lname: lname, phone: phone, email: email, project: project, message: message };
+    var url = 'https://script.google.com/macros/s/AKfycbyKsZcjKtI2zJjHDzVRDZOjYxN1NuLnIMZaDYGpr3HtLgbgd-GKRBsUEBTTOo09IjXj/exec';
+    console.log(data);
 
-  $(document).ready(function () {
-    $('#contactForm').on('submit', function (event) {
-      event.preventDefault();
-      var fname = $('#fname').val();
-      var lname = $('#lname').val();
-      var phone = $('#phone').val();
-      var email = $('#email').val();
-      var project = $('#project').val();
-      var message = $('#message').val();
-      var data = { fname: fname, lname: lname, phone: phone, email: email, project: project, message: message };
-      var url = 'https://script.google.com/macros/s/AKfycbyKsZcjKtI2zJjHDzVRDZOjYxN1NuLnIMZaDYGpr3HtLgbgd-GKRBsUEBTTOo09IjXj/exec';
-      console.log(data);
-
-      fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'text/plain;charset=utf-8',
-        },
-        body: JSON.stringify(data),
-      })
-      .then((res) => res.json())
-      .then((data) => console.log('data', data))
-      .catch((err) => console.log('err', err));
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'text/plain;charset=utf-8',
+      },
+      body: JSON.stringify(data),
     })
+    .then((res) => res.json())
+    .then((data) => {
+      $('#globalLoader').addClass('d-none');
+      $('#SuccessDialogLabel').html('Send Message Success');
+      $('#SuccessDialog .modal-body').html('We have received your message and will contact you as soon as possible.');
+      $('#SuccessDialog').modal('show');
+      $('#contactForm').trigger('reset');
+    })
+    .catch((err) => {
+      $('#globalLoader').addClass('d-none');
+      $('#SuccessDialogLabel').html('Send Message fail');
+      $('#SuccessDialog .modal-body').html('Submission failed, there may be network issues, please try again later.');
+      $('#SuccessDialog').modal('show');
+    });
+
+    event.preventDefault();
   });
 
-  /* - - - CONFIGURATION VARIABLES - - - */
 
-  var __semio__params = {
-    graphcommentId: "my-test-comment", // make sure the id is yours
-
-    behaviour: {
-    // HIGHLY RECOMMENDED
-    //  uid: "...", // uniq identifer for the comments thread on your page (ex: your page id)
-    },
-
-    // configure your variables here
-
-}
-
-/* - - - DON'T EDIT BELOW THIS LINE - - - */
-
-function __semio__onload() {
-    __semio__gc_graphlogin(__semio__params);
-}
-
-
-(function() {
-    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
-    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
-})();
+  });

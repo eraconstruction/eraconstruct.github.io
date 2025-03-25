@@ -435,9 +435,91 @@
         <h2 class="font-weight-light text-primary">Reviews</h2>
         </div>
     </div>
+
+    <div class="slide-one-item home-slider owl-carousel mb-5">
+        <div>
+          <div class="testimonial">
+            <figure class="mb-4">
+              <img src="static/picture/person_1.jpg" alt="Image" class="img-fluid mb-3">
+
+            </figure>
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              <p class="author"> &mdash; John Trump</p>
+            </blockquote>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial">
+            <figure class="mb-4">
+              <img src="static/picture/person_2.jpg" alt="Image" class="img-fluid mb-3">
+
+            </figure>
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              <p class="author"> &mdash; Roger Moore</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div>
+          <div class="testimonial">
+            <figure class="mb-4">
+              <img src="static/picture/person_4.jpg" alt="Image" class="img-fluid mb-3">
+            </figure>
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              <p class="author"> &mdash; Ben Carson</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div>
+          <div class="testimonial">
+            <figure class="mb-4">
+              <img src="static/picture/person_5.jpg" alt="Image" class="img-fluid mb-3">
+            </figure>
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              <p class="author"> &mdash; Jed Smith</p>
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+
     <div class="row">
         <div class="col-md-12 mb-12" id="reviews-container">
             <div id="graphcomment"></div>
+<script type="text/javascript">
+
+  /* - - - CONFIGURATION VARIABLES - - - */
+
+  var __semio__params = {
+    graphcommentId: "era-construction", // make sure the id is yours
+
+    behaviour: {
+      // HIGHLY RECOMMENDED
+      //  uid: "...", // uniq identifer for the comments thread on your page (ex: your page id)
+    },
+
+    // configure your variables here
+
+  }
+
+  /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params)
+  }
+
+
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+</script>
         </div>
     </div>
 </section>
@@ -632,6 +714,34 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="globalLoader" class="d-none position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50" style="z-index: 9999;">
+    <!-- 大型加载图标 -->
+    <div class="spinner-border text-light" style="width: 3rem; height: 3rem;"></div>
+    <!-- 可选加载文字 -->
+    <span class="visually-hidden">加载中...</span>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="SuccessDialog" tabindex="-1" role="dialog" aria-labelledby="SuccessDialogLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="SuccessDialogLabel">Send Message Success</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        We have received your message and will contact you as soon as possible.
+    </div>
+    <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-primary">OK</button>
+    </div>
+    </div>
+</div>
 </div>
 
 
