@@ -1025,6 +1025,7 @@ p {
 }
 .inner_blog_img img{
     width: 100%;
+    max-height: 258px;
     transition: .5s;
 }
 .inner_blog_area:hover .inner_blog_img img{
