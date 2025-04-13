@@ -236,6 +236,9 @@ p {
 .mobile_logo_area{
     display: none;
 }
+.mobile_logo_area img {
+    height: 30px;
+}
 .main_menu_area.absolute_menu.sticky {
     position: fixed;
     top: 0;
@@ -300,6 +303,16 @@ p {
 }
 .site_logo_area {
     margin-left: 95px;
+    height: 98px;
+}
+.site_logo_area a,
+.main_menu_area.sticky a.sticky_logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.site_logo_area img {
+    height: 80px;
 }
 /* inner main nav area css */
 .inner_main_nav_area ul{
@@ -958,6 +971,13 @@ p {
 .cbrand_area{
     padding: 60px 0;
 }
+
+.cbrand_area .inner_brand_area img {
+    max-width: 210px;
+    max-height: 65px;
+    margin: 0 auto;
+}
+
 
 .brand_area .slick-prev , .brand_area .slick-next{
     position: absolute;
@@ -1975,7 +1995,7 @@ table, th, td{
     margin: 55px 0;
 }
 .footer_item1 p {
-    margin: 30px 0 30px;
+    margin: 0 0 30px;
     font-size: 14px;
     color: var(--whitec);
 }
@@ -2119,7 +2139,7 @@ table, th, td{
     .testimonial blockquote {
       font-style: italic; }
       .testimonial blockquote p {
-        font-size: 1.5rem; }
+        font-size: 1.1rem; }
         .testimonial blockquote p.author {
           font-size: 1rem;
           font-style: normal; }
