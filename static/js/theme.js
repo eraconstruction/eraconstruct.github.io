@@ -371,7 +371,7 @@ $('[data-countdown]').each(function() {
     var project = $('#project').val();
     var message = $('#message').val();
     var data = { fname: fname, lname: lname, phone: phone, email: email, project: project, message: message };
-    var url = 'https://script.google.com/macros/s/AKfycbyKsZcjKtI2zJjHDzVRDZOjYxN1NuLnIMZaDYGpr3HtLgbgd-GKRBsUEBTTOo09IjXj/exec';
+    var url = 'https://script.google.com/macros/s/AKfycbykKeOU82Ri9Pt2UMMG7pBQrZ5EZ2b7YfCsEHS4_-3TqMsp-dyoU5FhbxtKKhzY3xY7Fw/exec';
     console.log(data);
 
     fetch(url, {
